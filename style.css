@@ -1,81 +1,64 @@
-*{
-    box-sizing: border-box;
-}
 body{
-    background-color: blue;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    background: green;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
 }
-.container{
-    background-color: aliceblue;
-    border-radius: 5px;
-    box-shadow: 10px 20px 25px rbga(0,0,0,.3);
-    overflow:hidden;
-    max-width: 100%;
-    width:400px;
-}
-.header{
-    background-color:bisque;
-    padding:80px 80px:
-}
-.header h2{
-    margin: 0;
-    text-align: center;
-    padding: 20px 40px;
-}
-.form{
-    padding: 30px 40px;
-    background-color: rgb(245, 245, 245);
 
-}
-.form-control{
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
-}
-.form-control label{
-    display: inline-block;
-    margin-bottom: 5px;
-}
-.form-control input{
-    border:2px solid #f0f0f0;
+#form{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: whitesmoke;
     border-radius: 5px;
-    display: block;
-    font-size: 16px;
-    padding: 10px;
+    padding:35px;
+}
+
+h1{
+    text-align: center;
+    color:#792099;
+}
+
+#form button{
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding:20px;
+    margin:10px 0px;
+    cursor:pointer;
+    font-size:20px;
     width:100%;
 }
-.form-control input:focus{
-outline: none;
-border-color: #777;
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
-.form-control.success input{
-   border-color: aquamarine;
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:7px;
+    padding:6px;
+    border:1px solid rgb(34,193,195) ;
 }
-.form-control.error input{
-    border-color: red;
+
+.input-group input:focus{
+    outline:0;
 }
-.form-control small{
-    color: red;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    visibility: hidden;
+
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
 }
-.form-control.error small{
-    visibility: visible;
+
+.input-group.success input{
+    border-color: #0cc477;
 }
-.form button{
-    background-color: blue;
-    display: block;
-    color: aliceblue;
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%;
-    font-size: 15px;
-    border-radius: 4px;
+
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
 }
